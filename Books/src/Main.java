@@ -21,13 +21,17 @@ public class Main {
 
     private static void chooseOption(Library library) throws IOException {
         boolean stop = false;
-        int option;
+        int option = 0;
         do{
             System.out.println("Please choose one of the suggested options and enter its number.");
             System.out.println("1. Display a list of books by the specified author.");
             System.out.println("2. Display a list of books published by the specified publisher.");
             System.out.println("3. Display a list of books released after the specified year.");
-            option = Integer.parseInt(reader.readLine());
+            try {
+                option = Integer.parseInt(reader.readLine());
+            } catch (Exception e) {
+                System.out.println("Invalid data.");
+            }
             if(option == 1 || option == 2 || option == 3) stop = true;
             else System.out.println("Please try again");
         } while (!stop);
