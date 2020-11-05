@@ -13,7 +13,7 @@ public class Library {
         Book[]tempBase = new Book[0];
         if(books != null) {
             tempBase = books;
-            books = new Book[tempBase.length + books.length];
+            books = new Book[tempBase.length + newBooks.length];
         } else books = new Book[newBooks.length];
         int index = 0;
         int index2 = 0;
