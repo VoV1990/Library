@@ -15,8 +15,7 @@ public class Main {
                 "AST", 2003, 285, 14, "solid");
         Book book5 = new Book("Inferno", "Brown",
                 "AST", 2016, 543, 25, "solid");
-        Book[] books = {book1, book2, book3, book4, book5};
-        Library library = new Library(books);
+        Library library = new Library(book1, book2, book3, book4, book5);
         chooseOption(library);
     }
 
