@@ -3,7 +3,6 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class Main {
-    public static BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
     public static void main(String[] args) throws IOException {
         Book book1 = new Book("Harry Potter and the philosopher's stone", "Rowling",
                 "Rosman", 2007, 397, 20, "solid");
